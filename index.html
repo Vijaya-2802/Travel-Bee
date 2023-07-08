@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Bee</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/59e08afa1b.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="d-flex flex-column">
+    
+    <section id="home">
+
+      <!-- header -->
+      <section >
+        <div class="">
+          <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top header">
+              <div class="container">
+                  <a class="navbar-brand" href="#">
+                      <img src="./Images/website-logo.png" class="travel-bee-logo" />
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav ml-auto">
+                          <a class="nav-link active" id="navItem1" href="#" onclick="allpageidclicks('home')">
+                              Home
+                              <span class="sr-only">(current)</span>
+                          </a>
+                          <a class="nav-link" href="#" id="navItem2">About us</a>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" id="navItem3" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Our Tours
+                              </a>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="maldives.html" >Maldives</a>
+                                <a class="dropdown-item" href="europe.html" >Europe</a>
+                                <a class="dropdown-item" href="Sevenwonders.html" >Seven Wonders</a>
+                                <a class="dropdown-item" href="India.html" >India</a>
+                                <a class="dropdown-item" href="Bali.html" >Bali</a>
+                                <a class="dropdown-item" href="dubai.html" >Dubai</a>
+                              </div>
+                            </li>
+                          <a class="nav-link" href="#" id="navItem4">Contact us</a>
+                          <a class="nav-link" href="#services" id="navItem5">Services</a>
+                      </div>
+                  </div>
+              </div>
+          </nav>
+        </div>
+      </section>
+
+      <!-- Home Carousel -->
+      <div class="bd-example mx-0 my-0 px-0 py-0">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" >
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1" class=""></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2" class=""></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100 home-carousel-img" src="./Images/home-carousel-1.jpeg">
+              <div class="carousel-caption d-block">
+                <h3><strong>Unique Travel Insights and Tips</strong></h3>
+                <h5 class="d-none d-sm-block">We give you personalized travelling experience.</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 home-carousel-img" src="./Images/home-carousel-2.jpeg">
+              <div class="carousel-caption d-block">
+                <h3><strong>Explore your Dream destinations with us</strong></h3>
+                <h5 class="d-none d-sm-block">Thousands of tourists made their tours adventurous with us.</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 home-carousel-img" src="./Images/home-carousel-3.jpeg">
+              <div class="carousel-caption d-block">
+                <h3><strong>Have a Holiday with Family</strong></h3>
+                <h5 class="d-none d-sm-block">Plan your family tours at affordable prices.</h5>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Services provided -->
+      <section>
+        <div class="pt-5 pb-5 my-5" id="services">
+          <div class="text text-center mb-5" >
+            <h1>What we can offer for you</h1>
+            <hr class="container">
+          </div>
+          <div class="d-md-flex flex-row justify-content-around">
+            <div class="col-md-3 d-flex flex-row pt-2">
+              <div class="mr-3 mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" height="45" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M192 93.7C192 59.5 221 0 256 0c36 0 64 59.5 64 93.7l0 66.3L497.8 278.5c8.9 5.9 14.2 15.9 14.2 26.6v56.7c0 10.9-10.7 18.6-21.1 15.2L320 320v80l57.6 43.2c4 3 6.4 7.8 6.4 12.8v42c0 7.8-6.3 14-14 14c-1.3 0-2.6-.2-3.9-.5L256 480 145.9 511.5c-1.3 .4-2.6 .5-3.9 .5c-7.8 0-14-6.3-14-14V456c0-5 2.4-9.8 6.4-12.8L192 400V320L21.1 377C10.7 380.4 0 372.7 0 361.8V305.1c0-10.7 5.3-20.7 14.2-26.6L192 160V93.7z"/></svg>
+              </div>
+              <div>
+                <h2>Flight Tickets</h2>
+                <p>At our travel agency, you can book air tickets to any world destination. We also provide online ticket booking via our website.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+              </div>
+              
+            </div>
+            <div class="col-md-3 d-flex flex-row pt-2">
+              <div class="mr-3 mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" height="45" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M192 32c0-17.7 14.3-32 32-32H352c17.7 0 32 14.3 32 32V64h48c26.5 0 48 21.5 48 48V240l44.4 14.8c23.1 7.7 29.5 37.5 11.5 53.9l-101 92.6c-16.2 9.4-34.7 15.1-50.9 15.1c-19.6 0-40.8-7.7-59.2-20.3c-22.1-15.5-51.6-15.5-73.7 0c-17.1 11.8-38 20.3-59.2 20.3c-16.2 0-34.7-5.7-50.9-15.1l-101-92.6c-18-16.5-11.6-46.2 11.5-53.9L96 240V112c0-26.5 21.5-48 48-48h48V32zM160 218.7l107.8-35.9c13.1-4.4 27.3-4.4 40.5 0L416 218.7V128H160v90.7zM306.5 421.9C329 437.4 356.5 448 384 448c26.9 0 55.4-10.8 77.4-26.1l0 0c11.9-8.5 28.1-7.8 39.2 1.7c14.4 11.9 32.5 21 50.6 25.2c17.2 4 27.9 21.2 23.9 38.4s-21.2 27.9-38.4 23.9c-24.5-5.7-44.9-16.5-58.2-25C449.5 501.7 417 512 384 512c-31.9 0-60.6-9.9-80.4-18.9c-5.8-2.7-11.1-5.3-15.6-7.7c-4.5 2.4-9.7 5.1-15.6 7.7c-19.8 9-48.5 18.9-80.4 18.9c-33 0-65.5-10.3-94.5-25.8c-13.4 8.4-33.7 19.3-58.2 25c-17.2 4-34.4-6.7-38.4-23.9s6.7-34.4 23.9-38.4c18.1-4.2 36.2-13.3 50.6-25.2c11.1-9.4 27.3-10.1 39.2-1.7l0 0C136.7 437.2 165.1 448 192 448c27.5 0 55-10.6 77.5-26.1c11.1-7.9 25.9-7.9 37 0z"/></svg>
+              </div>
+              <div>
+                <h2>Voyages & Cruises</h2>
+                <p>Besides regular tours, we also offer a variety of cruises & sea voyages for different customers looking for awesome experiences.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+              </div>
+              
+            </div>
+            <div class="col-md-3 d-flex flex-row pt-2">
+              <div class="mr-3 mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" height="45" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 32C0 14.3 14.3 0 32 0H480c17.7 0 32 14.3 32 32s-14.3 32-32 32V448c17.7 0 32 14.3 32 32s-14.3 32-32 32H304V464c0-26.5-21.5-48-48-48s-48 21.5-48 48v48H32c-17.7 0-32-14.3-32-32s14.3-32 32-32V64C14.3 64 0 49.7 0 32zm96 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V112c0-8.8-7.2-16-16-16H112c-8.8 0-16 7.2-16 16zM240 96c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V112c0-8.8-7.2-16-16-16H240zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V112c0-8.8-7.2-16-16-16H368c-8.8 0-16 7.2-16 16zM112 192c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V208c0-8.8-7.2-16-16-16H112zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V208c0-8.8-7.2-16-16-16H240c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V208c0-8.8-7.2-16-16-16H368zM328 384c13.3 0 24.3-10.9 21-23.8c-10.6-41.5-48.2-72.2-93-72.2s-82.5 30.7-93 72.2c-3.3 12.8 7.8 23.8 21 23.8H328z"/></svg>
+              </div>
+              <div>
+                <h2>Hotel Bookings</h2>
+                <p>We offer a wide selection of hotels ranging from 5-star ones to small properties located worldwide so that you could book a hotel you like.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+              </div>
+            </div>
+           </div>
+        </div>
+      </section>
+      
+      <!-- Owl carousel -->
+      <section>
+        <div >
+          <div class="text text-center">
+            <h1 class="mb-5 ml-5 ">Our Best Destinations</h1>
+          </div>
+          <div class="pl-5 pr-5 pb-2">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="d-flex flex-column shadow trip-card">
+                  <div>
+                    <img src="./Images/maldives-trip.webp" class="trip-image">
+                  </div>
+                  <div class="trip-card-container">
+                    <h2>Maldives</h2>
+                    <a href="maldives.html">Explore more <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
+                  </div>
+                </div>
+              </div>
+              <div class="item " >
+                <div class="d-flex flex-column shadow trip-card">
+                  <div>
+                    <img src="./Images/france-trip.jpg" class="trip-image">
+                  </div>
+                  <div class="trip-card-container">
+                    <h2>Europe</h2>
+                    <a href="europe.html">Explore more <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
+                  </div>
+                </div>
+              </div>
+              <div class="item" >
+                <div class="d-flex flex-column shadow trip-card">
+                  <div>
+                    <img src="./Images/7-wonders.jpg" class="trip-image">
+                  </div>
+                  <div class="trip-card-container">
+                    <h2>Seven Wonders</h2>
+                    <a href="Sevenwonders.html">Explore more <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
+                  </div>
+                </div>
+              </div>
+              <div class="item" >
+                <div class="d-flex flex-column shadow trip-card">
+                  <div>
+                    <img src="./Images/india-trip.jpg" class="trip-image">
+                  </div>
+                  <div class="trip-card-container">
+                    <h2>Incredible India</h2>
+                    <a href="India.html">Explore more <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="d-flex flex-column shadow trip-card">
+                  <div>
+                    <img src="./Images/bali-trip.jpg" class="trip-image">
+                  </div>
+                  <div class="trip-card-container">
+                    <h2>Bali</h2>
+                    <a href="Bali.html">Explore more <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
+                  </div>
+                </div>
+              </div>
+              <div class="item" >
+                <div class="d-flex flex-column shadow trip-card">
+                  <div>
+                    <img src="./Images/dubai-trip.avif" class="trip-image">
+                  </div>
+                  <div class="trip-card-container">
+                    <h2>Dubai</h2>
+                    <a href="dubai.html">Explore more <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="container text-center py-3 ">
+        <div class="text mb-5 pt-5 text-center">
+          <h1>Our customer's experiences</h1>
+        </div>
+        <div class="row justify-content-around">
+          <div class="col-lg-4">
+            <img src="./Images/testomonials-1.jpg" class="rounded-circle" height="140" width="140">
+    
+            <p>"We had a marvelous time in our travels to Madagascar, Zimbabwe, and Botswana, we had just wonderful experiences."</p>
+            <p>- Angela Mei</p>
+          </div>
+          <div class="col-lg-4">
+            <img src="./Images/testimonials-2.jpg" class="rounded-circle" height="140" width="140">
+
+            <p>"Just wanted to say many, many thanks for helping me set up an amazing Costa Rican adventure! My nephew and I had a great time! All of the accommodations were perfect, thank you!"</p>
+            <p>- Rahul Sinha</p>
+          </div>
+          <div class="col-lg-4">
+            <img src="./Images/testimonials-3.jpg" class="rounded-circle" height="140" width="140"> 
+            
+            <p>"The trip you put together for us in Italy went splendidly. Each touch point, each adventure, felt like you planned it with care about our needs and expectations. Thank you!"</p>
+            <p>- John Karter</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    
+    <!-- Footer -->
+    <section class="footer">
+      <footer class="py-5 mt-md-5 pt-md-5 container ">
+        <div class="row">
+          <div class="col-12 col-md">
+            <img class="mb-2" src="Images/website-logo.png" alt="" width="160" height="60">
+            <p class="d-block mb-3 text-muted">&copy; 2023</p>
+            <h4>Follow Us On</h4>
+            <div class="d-flex flex-row ">
+                <div class="mr-3">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="mr-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                </div>
+                <div class="mr-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                </div>
+                <div class="mr-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+                </div>
+            </div>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Services</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Flight Services</a></li>
+              <li><a class="text-muted" href="#">Voyage and Cruises</a></li>
+              <li><a class="text-muted" href="#">Hotel Bookings</a></li>
+              <li><a class="text-muted" href="#">Local Guides</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Gallery and Blogs</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Places</a></li>
+              <li><a class="text-muted" href="#">Celebreties</a></li>
+              <li><a class="text-muted" href="#">Best Experiences</a></li>
+              <li><a class="text-muted" href="#">Food and Hotels</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Team</a></li>
+              <li><a class="text-muted" href="#">Contact Us</a></li>
+              <li><a class="text-muted" href="#">Privacy</a></li>
+              <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+  </section>
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js" charset="UTF-8"></script>
+</body>
+</html>

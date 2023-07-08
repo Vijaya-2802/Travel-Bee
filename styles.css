@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+body{
+    background-color: #F0F0F0;
+}
+.header{
+    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+   
+}
+.home-carousel-img{
+    height: 600px;
+    background-size: cover;
+}
+#services-text{
+    text-align:center;
+}
+.footer{
+    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+}
+@media (max-width: 576px) {
+    .home-carousel-img{
+        height: 50vh;
+    }
+}
+#navItem1 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem2 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem3 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem4 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+#navItem5 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+.travel-bee-logo {
+    width: 160px;
+    height: 60px; 
+}
+@media (min-width: 576px) {
+    .bd-example{
+        padding: 1.5rem;
+        margin-right: 0;
+        margin-left: 0;
+        border-width: 0.2rem;
+    }
+}
+.page-img{
+    display:flex;
+    background-size: cover;
+    object-fit: contain;
+    height:100%;
+    width:100%;
+}
+.text{   
+   font-family: 'Lobster', cursive;   
+}
+@media(max-width:1200px){
+    .page-img{
+        width:100%;
+        height:100%;
+    }
+}
+.bd-example {
+    position: relative;
+    padding: 1rem;
+    margin: 1rem -15px 0;
+    border: solid #f8f9fa;
+    border-width: 0.2rem 0 0;
+}
+.trip-card{
+    border-radius: 15px;
+}
+.trip-image{
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.trip-card-container{
+    padding: 20px;
+}
+.second_mainheadings{
+    font-family: 'Rowdies', cursive;
+    font-size:250%;
+}
+.second_headings{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:150%;
+}
+.second_content{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:100%;
+}
+ 
